@@ -64,10 +64,10 @@ for x in upstream_json:
         # try again next time the script is run, should we hit a rate limit
         # this could also be caused by an invalid password
         ratelimitcheck = buzzapi.push_to_repo(downstream+"/pulls", username, password, request)
-        print(ratelimitcheck['message'])
 
         try:
             void = ratelimitcheck['message']
+            print(void)
             print("Couldn't mirror PR -- likely a rate limit, will be retried next runtime")
 
         except:

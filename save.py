@@ -1,21 +1,21 @@
 
 def file_append(file, content):
     if "list" in str(type(content)):
-        with open(str(file), mode='a', encoding='utf-8') as myfile:
+        with open(str(file), mode='a+', encoding='utf-8') as myfile:
             for x in content:
                 myfile.write(str(x) + "\n")
     else:
-        with open(str(file), mode='a', encoding='utf-8') as myfile:
+        with open(str(file), mode='a+', encoding='utf-8') as myfile:
             myfile.write(str(content)+"\n")
 
 
 def file_overwrite(file, content):
     if "list" in str(type(content)):
-        with open(str(file), mode='w', encoding='utf-8') as myfile:
+        with open(str(file), mode='w+', encoding='utf-8') as myfile:
             for x in content:
                 myfile.write(str(x) + "\n")
     else:
-        with open(str(file), mode='w', encoding='utf-8') as myfile:
+        with open(str(file), mode='w+', encoding='utf-8') as myfile:
             myfile.write(str(content)+"\n")
 
 
