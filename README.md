@@ -1,8 +1,9 @@
 # Buzz Bot
-## An easy-use github repo management bot.
-### Welcome!
-#### If you are using this code for your bot, please give credit, although you are not required or obligated to do so.
+## An easy-use github repo management tool.
 
+
+### Welcome!
+#### If you are creating and distribting software that uses this code, ***you must give attribution.***
 ### How to use
 1. Fill out `config.py` with correct information
 2. Run `firstBoot.py`
