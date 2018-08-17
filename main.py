@@ -59,7 +59,7 @@ for x in upstream_json:
 
             "body": "Original Author: " + str(x["user"]["login"]) + "\n"
             + "Original PR Link: " + str(x["html_url"]) +
-            "\n\n" + str(x["body"])+"\n\n\n<sub><sup>I am a bot, beep boop! [Download Me!]("+str(bot_repo)+") </sub></aup>",
+            "\n\n" + str(x["body"])+"\n\n\n<sup>I am a bot, beep boop! [Download Me!]("+str(bot_repo)+") </sup>",
 
             "head": x["head"]["label"],
 
