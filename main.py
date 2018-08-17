@@ -34,6 +34,10 @@ if not password or password == "":
 else:
     print("Loaded password")
 
+bot_repo = config
+if not bot_repo or bot_repo == "":
+    bot_repo = "https://github.com/CthulhuOnIce/Buzz-Bot"
+
 print("Loading files...")
 oldnumbers = save.file_2_list("saves/old_numbers.txt")
 print("loaded saves/old_numbers.txt")
@@ -53,7 +57,7 @@ for x in upstream_json:
 
             "body": "Original Author: " + str(x["user"]["login"]) + "\n"
             + "Original PR Link: " + str(x["html_url"]) +
-            "\n\n" + str(x["body"]),
+            "\n\n" + str(x["body"])+"\n\n\n<sub><sup>I am a bot, beep boop! [Download Me!]("+str(bot_repo)+") </sub></aup>",
 
             "head": x["head"]["label"],
 

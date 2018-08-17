@@ -10,6 +10,11 @@ upstream = "https://api.github.com/repos/them/their-branch"
 username = "you@example.com"  # email could also go here
 password = "VerySecurePassword"  # password, duh
 
+
+# The bot's master code repo, if you change the bot's code, YOU MUST ADD YOUR OWN REPO HERE, 
+# Or you violate the license
+repo = "https://github.com/CthulhuOnIce/Buzz-Bot"
+
 # toggle extra features
 make_Changelogs = True  # automatically generate a changelog based on the cl tags in pull requests.
 debug_mode = False  # whether or not to display debugging info
