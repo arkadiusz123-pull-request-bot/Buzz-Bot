@@ -52,6 +52,8 @@ count = 0
 for x in upstream_json:
     if not str(x['id']) in oldnumbers:
         print("Merging PR - "+str(x['number']))
+
+        # This is a mess, TODO: Fix this mess.
         request = {
             "title": "[MIRROR]: "+str(x['title']),
 
@@ -65,6 +67,7 @@ for x in upstream_json:
 
             "maintainer_can_modify": False
         }
+
         # try again next time the script is run, should we hit a rate limit
         # this could also be caused by an invalid password
         ratelimitcheck = buzzapi.push_to_repo(downstream+"/pulls", username, password, request)
