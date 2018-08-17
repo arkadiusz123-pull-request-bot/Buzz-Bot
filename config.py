@@ -16,5 +16,5 @@ password = "VerySecurePassword"  # password, duh
 repo = "https://github.com/CthulhuOnIce/Buzz-Bot"
 
 # toggle extra features
-make_Changelogs = True  # automatically generate a changelog based on the cl tags in pull requests.
+make_Changelogs = True  # automatically generate a changelog based on the cl tags in pull requests. (WIP, not done yet)
 debug_mode = False  # whether or not to display debugging info
